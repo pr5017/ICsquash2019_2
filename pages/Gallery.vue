@@ -34,11 +34,11 @@
               <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
                 <v-img :src="pauline2" class="image">
                   <!-- start carousel2 -->
-                  
+
                   <v-card-title
                     v-if="hover"
                     class="d-flex v-card--reveal font_size white--text clickable"
-                    
+
                     @click="album2 = true"
                   >Trip</v-card-title>
 
@@ -51,7 +51,7 @@
                         </v-carousel>
                     </v-card>
                   </v-dialog>
-       
+
                   <!-- end carousel2 -->
                 </v-img>
               </v-card>
@@ -65,7 +65,7 @@
           <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
             <v-img :src="pauline3" class="image">
               <!-- start carousel3 -->
-          
+
                   <v-card-title
                     v-if="hover"
                     class="d-flex v-card--reveal font_size white--text clickable"
@@ -81,7 +81,7 @@
                         </v-carousel>
                     </v-card>
                   </v-dialog>
-        
+
               <!-- end carousel3 -->
             </v-img>
           </v-card>
@@ -95,11 +95,11 @@
           <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
             <v-img :src="pauline4" class="image">
                <!-- start carousel4 -->
-          
+
                   <v-card-title
                     v-if="hover"
                     class="d-flex v-card--reveal font_size white--text clickable"
-                    
+
                     @click="album4 = true"
                   >Promo</v-card-title>
 
@@ -112,7 +112,7 @@
                         </v-carousel>
                     </v-card>
                   </v-dialog>
-        
+
               <!-- end carousel4 -->
             </v-img>
           </v-card>
@@ -123,11 +123,11 @@
           <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
             <v-img :src="pauline5" class="image">
                 <!-- start carousel5 -->
-          
+
                   <v-card-title
                     v-if="hover"
                     class="d-flex v-card--reveal font_size white--text clickable"
-                    
+
                     @click="album5 = true"
                   >Pauline!</v-card-title>
 
@@ -140,7 +140,7 @@
                         </v-carousel>
                     </v-card>
                   </v-dialog>
-        
+
               <!-- end carousel5 -->
             </v-img>
           </v-card>
@@ -235,12 +235,12 @@ var pauline = require("../assets/IMG_5963.jpg");
 
 export default {
   data: () => ({
-    pauline1: require("../assets/236ea0d1-f335-4e4b-9564-7a55c82ae125.jpg"),
+    pauline1: require("../assets/236ea0d1-f335-4e4b-9564-7a55c82ae125.JPG"),
     pauline2: require("../assets/IMG_5963.jpg"),
     pauline3: require("../assets/IMG_7890.JPG"),
     pauline4: require("../assets/91DC1719-F2AE-467F-902A-2F5B2C1065D2.JPG"),
-    pauline5: require("../assets/IMG_8800.JPG"),
-   
+    pauline5: require("../assets/IMG_8800.jpg"),
+
     album1:false,
     album1_photos: [
       {
@@ -256,7 +256,7 @@ export default {
       {
         src:pauline
       },
-      
+
     ],
 
     album3:false,
@@ -288,11 +288,11 @@ export default {
         src:pauline
       },
     ],
-    
+
   }),
 
   methods: {
-    
+
   }
 };
 </script>
