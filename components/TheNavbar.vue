@@ -1,15 +1,15 @@
 <template>
   <nav class="nav">
     <div>
-      <v-toolbar flat>
-        <v-btn flat clickable color="grey" @click="home()">
+      <v-toolbar flat dark>
+        <v-btn flat clickable color="white" @click="home()">
             <span>IC SQUASH</span>
         </v-btn>
         <v-spacer></v-spacer>
-        <v-btn flat clickable color="grey" @click="book_courts()">
+        <v-btn flat clickable color="white" @click="book_courts()">
             <span>BOOK COURTS</span>
         </v-btn>
-        <v-btn flat clickable color="grey" @click="login()">
+        <v-btn flat clickable color="white" @click="login()">
             <span>LOGIN</span>
             <v-icon right>exit_to_app</v-icon>
         </v-btn>

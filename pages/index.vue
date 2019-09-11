@@ -1,24 +1,27 @@
 /*Html for home page*/
 <template>
-  <div class="container">
-
-    <div class="container">
-      <v-jumbotron>
-        <v-container>
-          <v-layout align-center>
-            <v-btn
-              id="join_us"
-              round
-              small
-              color="beige lighten-3"
-              absolute
-              @click=""
-              href="/join_us"
-            >Join Us
-            </v-btn>
-          </v-layout>
-        </v-container>
-      </v-jumbotron>
+  <div class="main">
+    <div class="main" id="jumbo">
+      <div id="topPart">
+        <img src="/logo-shadow.png" alt="" id="logo">
+      </div>
+      <div id="bottomPart">
+          <img src="/IC_Logo.png" id="iclogo">
+          <v-row>
+            <v-flex text-xs-center>
+              <v-btn
+                id="join_us"
+                round
+                small
+                color="beige lighten-3"
+                absolute
+                @click=""
+                href="/join_us"
+              >Join Us
+              </v-btn>
+            </v-flex>
+          </v-row>
+      </div>
     </div>
 
     <div class="container">
@@ -58,11 +61,40 @@
 
 <style lang="stylus" scoped>
 
+.main {
+  width: 100%;
+}
+
+#logo {
+  height: 100%;
+}
+
+#iclogo {
+  height: 40%;
+  margin: 1%;
+}
+
+#topPart {
+  height: 50%;
+}
+
+#bottomPart {
+  height:50%;
+  text-align: center;
+}
+
+#jumbo {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.8)), url("../assets/seigo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 724px;
+  text-align: center;
+  padding-top: 50px;
+}
+
 #join_us {
-  left: 50%;
-  top: 250px;
   transform: translate(-50%, -50%);
-  min-height: 5%;
+  height:3%
   width: 250px;
   max-width: 25%;
   padding: 5px;
@@ -70,6 +102,7 @@
   opacity: 0.9;
   background-color: #eceff1;
   font-family: 'Courier New';
+  margin-top: 30px;
 }
 
 .clickable {
@@ -97,6 +130,8 @@
 
 <script>
 export default {
+  data: () => ({
+  }),
   computed: {
     currentBreakPoint() {
       return this.$vuetify.breakpoint.name;

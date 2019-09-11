@@ -1,9 +1,7 @@
 <template>
   <v-app class="grey lighten-4">
-    <div class="container">
       <TheNavbar/>
       <nuxt/>
-    </div>
   </v-app>
 </template>
 
@@ -42,3 +40,7 @@
     }
   }
 </script>
+
+<style>
+
+</style>
