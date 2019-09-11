@@ -1,6 +1,6 @@
-# hello-world
+# IC Squash website
 
-> My priceless Nuxt.js project
+> The imperial squash club's webiste ... also Pauline's priceless Nuxt.js project
 
 ## Build Setup
 

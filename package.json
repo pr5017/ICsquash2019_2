@@ -1,8 +1,8 @@
 {
-  "name": "hello-world",
+  "name": "IC_Squash",
   "version": "1.0.0",
-  "description": "My priceless Nuxt.js project",
-  "author": "Pauline",
+  "description": "The imperial squash club's webiste ... also Pauline's priceless Nuxt.js project",
+  "author": "Pauline + Nate",
   "private": true,
   "scripts": {
     "dev": "nuxt",

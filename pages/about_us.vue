@@ -1,7 +1,6 @@
 <template>
   <v-layout column align-center>
-   
-
+  
     <h class="head-about_us">About Us</h>
     <v-container>
       <p class="blockquote justify-space-around">
@@ -77,5 +76,3 @@ p {
   }
 }
 </style>
-
-
