@@ -26,31 +26,47 @@
 
     <div class="container">
       <v-layout column align-center>
-        <h class="head-about_us">About Us</h>
+        <h2 class="head-about_us">About Us</h2>
         <v-container>
           <p class="blockquote justify-space-around">
-            By joining
-            <b>Imperial Squash</b> you can play squash at any level.
-          </p>
-          <p
-            class="blockquote"
-          >We offer something for everyone, whether it is playing competitively with the teams or participating as a casual social member.</p>
+            At Imperial Squash, our <b>main</b> aim is to <b>build</b> the squash community at Imperial College.
+             Whether it is playing <b>competitively</b> with the teams, participating as a <b>casual</b> social member <b>or</b>
+             holding a raquet for the first time as a <b>beginner</b> we hope to see <b>you</b> on court.</p>
           <p class="blockquote">
-            Courts are right at the heart of the South Kensington campus at
-            <b>Ethos Sports Centre</b> becoming a member lets you book free courts throughout the year.
+            Becoming a member of <b>this</b> society allows you to book <b>free</b> courts during the year.
+              Membership also allows you to come to the <b>regular</b> social sessions, where you can meet new people with varying levels of experiences and have fun. There will also be members of
+              the competitive teams who can provide <b>coaching and tips</b>.
           </p>
 
           <p class="blockquote">
-            Playing competitively for the teams also allows you to attend team training sessions.
-            There are four Men’s teams and two Women’s teams.
-            <v-spacer>In addition to these competitive and social sessions, there are also special squash events throughout the year, including a doubles tournament.</v-spacer>
+            <v-spacer>In addition to these sessions, there are also special squash events throughout the year, including a doubles tournament and mini-league.</v-spacer>
+          </p>
+
+          <p class="blockquote">
+            Other <b>social events</b> include pub crawls, bowling, game's night, sports’ nights, and club dinners. So no matter your level, the we definitely have something to offer.
+          </p>
+        </v-container>
+
+        <h2>Where to find us</h2>
+        <v-container>
+          <p class="blockquote">
+              Courts are right at the heart of the South Kensington campus at <b>Ethos Sports Centre</b> (7 Princes Gardens, Knightsbridge, London SW7 1NA).
+          </p>
+        </v-container>
+
+        <h2>Competitive Squash</h2>
+        <v-container>
+          <p class="blockquote">
+            If you are looking to play more competitively we have two women's teams and four men's teams. The teams compete in the BUCS and LUSL leagues with <b>regular</b> matches across
+            London and the country.
           </p>
           <p class="blockquote">
-            Other
-            <b>social events</b> include pub crawls, boozy bowling, sports’ nights, and club dinners. So no matter your level, the Squash Club definitely has something to offer.
+            Joining the team allows you to attend team training sessions as well as additional benefits such as strength and conditioning.
+            In order to join, make sure you attend the team trials at the beginning of the autumn and spring term! To find out more details please contact comittee members
+            via email or facebook.
           </p>
-          <v-icon color="teal lighten-2">{{icon}}</v-icon>
         </v-container>
+
       </v-layout>
     </div>
 
