@@ -45,6 +45,11 @@
           <p class="blockquote">
             Other <b>social events</b> include pub crawls, bowling, game's night, sports’ nights, and club dinners. So no matter your level, the we definitely have something to offer.
           </p>
+
+          <p class="blockquote">
+            The society has a facebook page, instagram and linkedin where you can find news and keep up to date. The links are provided at the bottom of the page!
+          </p>
+
         </v-container>
 
         <h2>Where to find us</h2>
@@ -79,6 +84,10 @@
 
 .main {
   width: 100%;
+}
+
+.clickable {
+  cursor: pointer;
 }
 
 #logo {
@@ -119,10 +128,6 @@
   background-color: #eceff1;
   font-family: 'Courier New';
   margin-top: 30px;
-}
-
-.clickable {
-  cursor: pointer;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
