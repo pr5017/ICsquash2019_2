@@ -44,6 +44,9 @@
       },
       union() {
         window.location.href = "https://www.imperialcollegeunion.org/activities/a-to-z/squash";
+      },
+      login() {
+      window.location.href = "/login"
       }
     }
   }

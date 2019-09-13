@@ -1,131 +1,144 @@
 <template>
-  <v-container fluid> 
-    <v-layout column wrap>
-      <v-flex>
-        <v-header bold id="a1">Book Court</v-header>
-        <v-subheader v-text="'Pick a date you would like to book'"></v-subheader>
-      </v-flex>
-      <!-- date picker -->
-      <template>
-        <v-layout>
-          <v-date-picker v-model="picker" mb-2 :type="month ? 'month' : 'date'" functionEvents="null" ></v-date-picker>
-        </v-layout>
-      </template>
-      <!-- date picker -->
+  <div class="container blockquote"id="main">
+    <h1>Booking courts</h1>
 
-      <v-flex>
-        <v-subheader v-text="'Maximum of 2 time slots can be selected'"></v-subheader>
-      </v-flex>
+    <h2>Rules</h2>
+    <v-container>
+      <p>A member can only book <b>one</b> 30 minute sessions per <b>day</b>. For example, if a pair of players wish to play for an hour
+      , <b>each</b> player will need to book a session. You are welcome to use the courts if they are not booked.
+    However, priority will be given to those whose book the court (Of course).</p>
 
-      <v-flex>
-        <v-select v-model="t1" :items="times" label="Select" multiple chips @input="limiter" class="select"></v-select>
-      </v-flex>
+      <p>The bookings for the court will be reset weekly at <b>00:00 - Monday</b>.</p>
 
-        <!--DIALOG  -->
-      <div class="text-center">
-        <v-dialog v-model="dialog_book" width="500">
-          <template v-slot:activator="{on}">
-              <v-btn @click="submit_booking()" class="btn">BOOK</v-btn>
-          </template>
+      <h3>Enjoy!</h3>
+    </v-container>
 
-          <v-card>
-            <v-card-title class="headline grey lighten-2" primary-title>booking accepted!</v-card-title>
+    <h2>Saturday</h2>
+    <table>
+      <tr>
+        <th class="t">Time</th>
+        <th>Court 1</th>
+        <th>Court 2</th>
+      </tr>
+      <tr>
+        <th class="t">12:00</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">12:30</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">13:00</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">13:30</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">14:00</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">14:30</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">15:00</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">15:30</th>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
 
-            <v-card-text>Court reserved for {{this.picker}} from {{this.t1}}</v-card-text>
+    <h2>Sunday</h2>
+    <table>
+      <tr>
+        <th class="t">Time</th>
+        <th>Court 1</th>
+        <th>Court 2</th>
+      </tr>
+      <tr>
+        <th class="t">16:00</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">16:30</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">17:00</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">17:30</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">18:00</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">18:30</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">19:00</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="t">19:30</th>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
 
-            <v-divider></v-divider>
+  </div>
 
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="primary" text @click="popUpDown()">OK</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
-      </div>
-      <!-- END DIALOG -->
-      <v-btn @click="backHome()" class="btn">BACK</v-btn>
-    </v-layout>
-  </v-container>
 </template>
 
 <style>
-.v-container{
-  margin: auto 100px;
-}
-#a1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
-    
-}
-.select{
-    width: 300px;
-}
-.btn {
-    width: 20px;
-}
+
+  table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid black;
+    width: 40%;
+    text-align: center;
+  }
+
+  .t {
+    width: 10%;
+  }
+
+  #main {
+    text-align: center;
+  }
+
 </style>
 
 <script>
-export default {
-  data() {
-    return {
-      t1: [],
-      picker: new Date().toISOString().substr(0, 10),
-      times: ["7.00-7.45", "7.45-8.30", "8.30-9.15", "9.15-10.00"],
-      dialog_book:false,
-      
-    };
-  },
 
-//event//
-computed: {
-      functionEvents () {
-        return this.month ? this.monthFunctionEvents : this.dateFunctionEvents
-      },
-    },
-//event//
-  methods: {
-    backHome() {
-      window.location.href = "/";
-    },
-    submit_booking() {
-      console.log(this.picker, this.t1);
-      this.dialog_book= true;
-    },
-    popUpDown() {
-      this.dialog_book= false;
-      
-    },
-    limiter(e) {
-      if (e.length > 2) {
-        console.log("maximum2,e");
-        e.pop();
-      }
-    },
-    
-    // event//
-    dateFunctionEvents (date) {
-        const [,, day] = date.split('-')
-        if ([12, 17, 28].includes(parseInt(day, 10))) return true
-        if ([1, 19, 22].includes(parseInt(day, 10))) return ['red', '#00f']
-        return false
-      },
-      monthFunctionEvents (date) {
-        const month = parseInt(date.split('-')[1], 10)
-        if ([1, 3, 7].includes(month)) return true
-        if ([2, 5, 12].includes(month)) return ['error', 'purple', 'rgba(0, 128, 0, 0.5)']
-        return false
-      },
-    // event//
-  }
-};
 </script>
-
-
-
-
-
-
-   
-
-

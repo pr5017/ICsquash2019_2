@@ -3,8 +3,10 @@
   <div class="main" id="footer">
     <div class="container">
       <h2>Contacts</h2>
+      <img src="../assets/ICU_logo.png" alt="" id="footerLogo">
+      <img src="../assets/sport_imperial_logo.jpg" alt="" id="footerLogo">
       <p id="ICemail"><b>Email:</b> squash@ic.ac.uk</p>
-      <v-toolbar flat dark>
+      <v-toolbar id="iconBar" flat dark>
           <v-btn flat clickable color="white" @click="fb()">
               <span>FACEBOOK</span>
           </v-btn>
@@ -49,6 +51,10 @@
 
 <style>
 
+  #iconBar {
+    width: 500px
+  }
+
   .v-btn {
     min-width: 0px;
   }
@@ -64,6 +70,15 @@
   #ICemail {
     font-size: 20px;
     height: 24px;
+  }
+
+  #footerLogo {
+    max-height: 55px;
+    height: auto;
+    width:auto;
+    float: right;
+    margin: 15px
+
   }
 
   #footer {

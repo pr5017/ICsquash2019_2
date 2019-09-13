@@ -15,8 +15,7 @@
                 small
                 color="beige lighten-3"
                 absolute
-                @click=""
-                href="/join_us"
+                @click= "join()""
               >Join Us
               </v-btn>
             </v-flex>
@@ -32,22 +31,55 @@
             At Imperial Squash, our <b>main</b> aim is to <b>build</b> the squash community at Imperial College.
              Whether it is playing <b>competitively</b> with the teams, participating as a <b>casual</b> social member <b>or</b>
              holding a raquet for the first time as a <b>beginner</b> we hope to see <b>you</b> on court.</p>
-          <p class="blockquote">
-            Becoming a member of <b>this</b> society allows you to book <b>free</b> courts during the year.
-              Membership also allows you to come to the <b>regular</b> social sessions, where you can meet new people with varying levels of experiences and have fun. There will also be members of
-              the competitive teams who can provide <b>coaching and tips</b>.
-          </p>
+
+          <p class="blockquote justify-space-around">Becoming a member of <b>this</b> society also allows you to book <b>free</b> courts on the weekend during the year.</p>
 
           <p class="blockquote">
-            <v-spacer>In addition to these sessions, there are also special squash events throughout the year, including a doubles tournament and mini-league.</v-spacer>
+            The society has a facebook page, instagram and linkedin where you can find news and keep up to date. The links are provided at the bottom of the page!
+          </p>
+
+        </v-container>
+
+        <h2>Coaching Sessions</h2>
+        <v-container>
+          <p class="blockquote">
+            We offer <b>four</b> levels: Beginner, Intermediate, Improvers and Advanced. These sessions are open to <b>all</b> members of the society!
+            At these sessions there will be coaches who will cater to your skill level and consider what you seek out of playing the sport.
+          </p>
+
+          <table id="cSessions">
+            <tr>
+              <th>Beginners</th>
+              <td>Tuesday 18:00 - 19:00</td>
+            </tr>
+            <tr>
+              <th>Intermediate</th>
+              <td>Tuesday 17:00 - 18:00</td>
+            </tr>
+            <tr>
+              <th>Improvers</th>
+              <td>Thursday 17:00 - 18:00</td>
+            </tr>
+            <tr>
+              <th>Advanced</th>
+              <td>Friday 18:00 - 19:00</td>
+            </tr>
+          </table>
+        </v-container>
+
+        <h2>Social session and events</h2>
+        <v-container>
+
+          <p class="blockquote">
+            In addition to coaching sessions we have a social session (<b>Friday: 19:00 - 20:30</b>) where you can meet other members of the society with varying standards.
+              Here you can practice what you have learnt as well as recieving tips and making new friends.
+          </p>
+          <p class = "blockquote">
+              There are also special squash events throughout the year, including a doubles tournament and mini-league.
           </p>
 
           <p class="blockquote">
             Other <b>social events</b> include pub crawls, bowling, game's night, sports’ nights, and club dinners. So no matter your level, the we definitely have something to offer.
-          </p>
-
-          <p class="blockquote">
-            The society has a facebook page, instagram and linkedin where you can find news and keep up to date. The links are provided at the bottom of the page!
           </p>
 
         </v-container>
@@ -66,7 +98,7 @@
             London and the country.
           </p>
           <p class="blockquote">
-            Joining the team allows you to attend team training sessions as well as additional benefits such as strength and conditioning.
+            Joining the team has additional benefits such as strength and conditioning sessions.
             In order to join, make sure you attend the team trials at the beginning of the autumn and spring term! To find out more details please contact comittee members
             via email or facebook.
           </p>
@@ -88,6 +120,18 @@
 
 .clickable {
   cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  width: 50%;
+  text-align: center
 }
 
 #logo {
@@ -119,7 +163,7 @@
 
 #join_us {
   transform: translate(-50%, -50%);
-  height:3%
+  height:1%
   width: 250px;
   max-width: 25%;
   padding: 5px;
@@ -163,9 +207,8 @@ export default {
     console.log("init", this.screenSize);
   },
   methods: {
-    shop() {
-      window.location.href =
-        "https://www.imperialcollegeunion.org/activities/a-to-z/squash";
+    join() {
+      window.location.href ="/join_us";
     }
   },
   watch: {

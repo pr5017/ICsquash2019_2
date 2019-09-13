@@ -6,6 +6,25 @@
   </v-app>
 </template>
 
+<style>
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  ol {
+    font-size: 1.5em;
+  }
+
+  .blockquote {
+    font-size: 1.5em;
+  }
+</style>
+
 <script>
 
   import TheNavbar from "@/components/TheNavbar"
